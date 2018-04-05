@@ -1,20 +1,19 @@
 import React         from 'react';
-import DashBoardPage from '../components/DashBoardPage';
-import LoginPage   from '../components/LoginPage';
-import NotFoundPage from '../components/NotFoundPage';
+import EMContractorsPage from '../components/EM_Contractors/EMContractorsPage'
+import LegacyPage from '../components/Legacy_School/LegacyPage';
+import HomePage   from '../components/HomePage';
 import { Router, Route, Switch, Link, NavLink } from 'react-router-dom';
 import createHistory from 'history/createBrowserHistory';
-import PrivateRoute from './PrivateRoute';
-import PublicRoute  from './PublicRoute';
+
 
 export const history = createHistory();
 const AppRouter = () => (
   <Router history={history}>
       <div>
         <Switch>
-          <PublicRoute  path='/'            component={LoginPage} exact={true}/>
-          <PrivateRoute path='/dashboard'  component={DashBoardPage} />
-          <Route                           component={NotFoundPage} />
+          <Route  path='/'           component={HomePage} exact={true}/>
+          <Route  path='/emcontractors'  component={EMContractorsPage} />
+          <Route  path='/legacy'  component={LegacyPage} />
         </Switch>
       </div>
   </Router>

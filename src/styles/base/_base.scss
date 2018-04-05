@@ -9,9 +9,33 @@ html {
 
 body {
   color: $dark-grey;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'ubuntu', Arial, sans-serif;
   font-size: $m-size;
   line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+  color: pink;
+}
+
+h1 {
+  font-size: $xl-size;
+}
+
+h2 {
+  font-size: $m-size;
+  font-weight: $medium;
+}
+
+p {
+  font-size: $m-size;
+  font-weight: $light;
 }
 
 button {
@@ -22,6 +46,6 @@ button:disabled {
   cursor: default;
 }
 
-.is-active {
-  color: red;
+span {
+  color: $orange;
 }

@@ -1,7 +1,7 @@
 // Colors
 $dark-grey: #333;
-$blue: #1c88bf;
-$dark-blue: #364051;
+$orange: #e38600;
+$dark-blue: #1a272c;
 $gray: #666;
 $grey: #888;
 $off-white: #f7f7f7;
@@ -10,11 +10,41 @@ $off-white: #f7f7f7;
 $font-size-large: 1.8rem;
 $font-size-small: 1.4rem;
 
+// Font weight
+$medium: 500;
+$mid: 400;
+$light: 300;
+$dark: 700;
+
 // Spacing
+$tiny: .8rem;
 $s-size: 1.2rem;
 $m-size: 1.6rem;
 $l-size: 3.2rem;
 $xl-size: 4.8rem;
 
+
+// Links
+
+$lower: 6rem;
+$quarter: 8rem;
+$mid: 10rem;
+$half: 12rem;
+
+
 // Media Queries
-$desktop-breakpoint: 45rem;
+
+// 300px
+$sm-mobile-breakpoint: 18.75rem;
+
+//400px
+$mobile-breakpoint: 25rem;
+
+// 550px
+$tablet-breakpoint: 34.375rem;
+
+// 750px
+$bg-tablet-breakpoint: 46.875rem;
+
+// 1000px
+$desktop-breakpoint: 62.5rem;
