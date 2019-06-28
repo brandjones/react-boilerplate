@@ -1,0 +1,39 @@
+@media only screen and (min-width: 0px) and (max-width: 739px) {
+  #Badge {
+    margin: 0 auto;
+    padding: $spacing-big;
+
+    .Badge-full-screen {
+      display: none;
+    }
+
+    a {
+      display: block;
+      font-size: $font-size-huge;
+      font-weight: $font-weight-dark;
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+}
+
+@media only screen and (min-width: 740px) {
+  #Badge {
+    box-sizing: border-box;
+    // margin: $spacing-huge;
+    max-width: 960px;
+    padding: 0 160px;
+    position: relative;
+    width: 100%;
+
+    .Badge-full-screen {
+      display: block;
+    }
+
+    a {
+      display: block;
+      font-size: $font-size-huge;
+      font-weight: $font-weight-dark;
+    }
+  }
+}

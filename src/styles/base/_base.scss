@@ -1,51 +1,37 @@
-* {
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 62.5%;
-
-}
-
+html,
 body {
-  color: $dark-grey;
-  font-family: 'ubuntu', Arial, sans-serif;
-  font-size: $m-size;
-  line-height: 1.6;
+  font-family: $Ubuntu;
+  font-size: 16px;
+  margin: 0;
+  overflow-x: hidden;
+  padding: 0;
+}
+
+div,
+section,
+img {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $grey;
+  margin: 0;
+  padding: 0;
 }
 
 a {
+  margin: 0;
+  padding: 0;
   text-decoration: none;
-  color: black;
 }
 
 a:hover {
-  text-decoration: none;
-  color: pink;
-}
-
-h1 {
-  font-size: $xl-size;
-}
-
-h2 {
-  font-size: $m-size;
-  font-weight: $medium;
-}
-
-p {
-  font-size: $m-size;
-  font-weight: $light;
-}
-
-button {
+  color: #ea63fe;
   cursor: pointer;
-}
-
-button:disabled {
-  cursor: default;
-}
-
-span {
-  color: $orange;
 }

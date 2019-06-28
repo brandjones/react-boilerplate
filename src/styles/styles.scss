@@ -1,23 +1,22 @@
+// These are cdn imports. May include directly at a later point. Does that even save time?
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700");
+@import url("https://fonts.googleapis.com/css?family=Comfortaa&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Dosis&display=swap");
 
+// These are setup files just to get stuff squared away.
+@import "./base/settings";
+@import "./base/base";
 
+// These are "module" imports meaning they are only part of a page.
+@import "./components/modules/badge.scss";
+@import "./components/modules/navbar.scss";
+@import "./components/modules/content.scss";
+@import "./components/modules/top_section.scss";
+@import "./components/modules/middle_section.scss";
+@import "./components/modules/bottom_section.scss";
+@import "./components/modules/loader.scss";
 
-// Font Import
-@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700');
-
-@import './base/settings';
-@import './base/base';
-@import './components/beginning-content';
-@import './components/bottom-content';
-@import './components/box-layout';
-@import './components/button';
-@import './components/header';
-@import './components/content-container';
-@import './components/input-group';
-@import './components/inputs';
-@import './components/form';
-@import './components/visibility';
-@import './components/list';
-@import './components/loader';
-@import './components/home';
-@import './components/middle-content';
-@import './components/navigation-bar';
+// These are "page" imports meaning styles affect the entire page as a whole.
+@import "./components/pages/_home.scss";
+@import "./components/pages/_legacy.scss";
+@import "./components/pages/_em_contractors.scss";

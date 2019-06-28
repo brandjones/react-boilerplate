@@ -1,0 +1,45 @@
+@media only screen and (min-width: 0px) and (max-width: 739px) {
+  #Navbar {
+    display: flex;
+    justify-content: space-evenly;
+    padding: $spacing-huge;
+
+    a {
+      color: $grey;
+    }
+  }
+
+  // Remove Github and Medium Links
+  .remove-child {
+    display: none;
+  }
+  // Change background: to gray.
+  .change-background {
+    background: $navbar-bg;
+  }
+}
+
+@media only screen and (min-width: 740px) {
+  #Navbar {
+    display: flex;
+    justify-content: space-evenly;
+    padding: $spacing-huge;
+
+    a {
+      color: $grey;
+    }
+  }
+
+  // Remove Github and Medium Links
+  .remove-child {
+    display: none;
+  }
+  // Change background: to gray.
+  .change-background {
+    background: $navbar-bg;
+  }
+
+  .green {
+    color: #afbe8f;
+  }
+}
