@@ -7,7 +7,7 @@ const Content = () => {
       <div className="row">
         <section className="Content-em">
           <Link to="/emcontractors">
-            <img alt="EM Contractors" src="/images/em_home.png" />
+            <img alt="EM Contractors" src="/images/em_home.jpg" />
           </Link>
         </section>
         <section className="Content-leg">

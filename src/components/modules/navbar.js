@@ -7,8 +7,7 @@ const NavBar = ({ match }) => {
   if (url === "/") {
     return (
       <section id="Navbar">
-        <a> Github </a>
-        <a> Medium </a>
+        <a href="https://github.com/brandjones"> Github </a>
       </section>
     );
   }
