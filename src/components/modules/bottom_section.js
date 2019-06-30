@@ -1,4 +1,5 @@
 import React from "react";
+import axios from "axios";
 
 const Bottomsection = ({ match }) => {
   const { path } = match;
@@ -7,10 +8,14 @@ const Bottomsection = ({ match }) => {
     return (
       <section id="Bottomsection">
         <div className="Bottomsection-button">
-          <a href="https://legacy-school.herokuapp.com/">
-            {" "}
+          <Link
+            to={e => {
+              e.prevenDefault();
+              axios.get("wwww.legacyschoolofarts.com");
+            }}
+          >
             View The Legacy School{" "}
-          </a>
+          </Link>
         </div>
       </section>
     );
@@ -20,14 +25,16 @@ const Bottomsection = ({ match }) => {
     return (
       <section id="Bottomsection">
         <div className={`Bottomsection-button`}>
-          <a
-            a
-            href="https://floating-oasis-25772.herokuapp.com/"
+          <Link
+            to={() => {
+              e.prevenDefault();
+              axios.get("wwww.emscottcontractors.com");
+            }}
             className={`Bottomsection-button-orange`}
           >
             {" "}
             View E.M. Contractors{" "}
-          </a>
+          </Link>
         </div>
       </section>
     );
@@ -37,13 +44,16 @@ const Bottomsection = ({ match }) => {
     return (
       <section id="Bottomsection">
         <div className={`Bottomsection-button`}>
-          <a
-            href="https://immense-bastion-16871.herokuapp.com/"
+          <Link
+            to={() => {
+              e.prevenDefault();
+              axios.get("www.nysentinel.co");
+            }}
             className={`Bottomsection-button-black`}
           >
             {" "}
             View The Sentinel{" "}
-          </a>
+          </Link>
         </div>
       </section>
     );
