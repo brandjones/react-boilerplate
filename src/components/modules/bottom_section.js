@@ -1,22 +1,17 @@
 import React from "react";
-import axios from "axios";
 import { Link } from "react-router-dom";
 
-const Bottomsection = ({ match }) => {
+const Bottomsection = ({ match, fetchLegacyProject }) => {
   const { path } = match;
 
   if (path === "/legacy") {
     return (
       <section id="Bottomsection">
         <div className="Bottomsection-button">
-          <Link
-            to={e => {
-              e.prevenDefault();
-              axios.get("wwww.legacyschoolofarts.com");
-            }}
-          >
+          <a href="http://www.legacyschoolofarts.com">
+            {" "}
             View The Legacy School{" "}
-          </Link>
+          </a>
         </div>
       </section>
     );
@@ -26,16 +21,13 @@ const Bottomsection = ({ match }) => {
     return (
       <section id="Bottomsection">
         <div className={`Bottomsection-button`}>
-          <Link
-            to={() => {
-              e.prevenDefault();
-              axios.get("wwww.emscottcontractors.com");
-            }}
+          <a
+            href="http://www.emscottcontractors.com"
             className={`Bottomsection-button-orange`}
           >
             {" "}
             View E.M. Contractors{" "}
-          </Link>
+          </a>
         </div>
       </section>
     );
@@ -45,16 +37,13 @@ const Bottomsection = ({ match }) => {
     return (
       <section id="Bottomsection">
         <div className={`Bottomsection-button`}>
-          <Link
-            to={() => {
-              e.prevenDefault();
-              axios.get("www.nysentinel.co");
-            }}
+          <a
+            href="http://www.nysentinel.co"
             className={`Bottomsection-button-black`}
           >
             {" "}
             View The Sentinel{" "}
-          </Link>
+          </a>
         </div>
       </section>
     );

@@ -10,6 +10,8 @@ import Bottomsection from "../modules/bottom_section";
 
 import BounceLoader from "react-spinners/BounceLoader";
 
+import axios from "axios";
+
 class Legacy extends React.Component {
   constructor(props) {
     super(props);
@@ -51,7 +53,10 @@ class Legacy extends React.Component {
           Legacy={LegacyObj}
         />
         <Middlesection match={match} />
-        <Bottomsection match={match} />
+        <Bottomsection
+          match={match}
+          fetchLegacyProject={this.fetchLegacyProject}
+        />
         <NavBar match={match} />
       </div>
     );
