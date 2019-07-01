@@ -1,7 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
-const Bottomsection = ({ match, fetchLegacyProject }) => {
+const Bottomsection = ({ match }) => {
   const { path } = match;
 
   if (path === "/legacy") {

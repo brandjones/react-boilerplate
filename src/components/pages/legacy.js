@@ -24,6 +24,11 @@ class Legacy extends React.Component {
     setTimeout(() => this.setState({ loading: false }), 500);
   }
 
+  // goToGoogle = e => {
+  //   e.preventDefault();
+  //   console.dir(history);
+  // };
+
   render() {
     const { match } = this.props;
 
@@ -55,6 +60,8 @@ class Legacy extends React.Component {
         <Middlesection match={match} />
         <Bottomsection
           match={match}
+          his={history}
+          goToGoogle={this.goToGoogle}
           fetchLegacyProject={this.fetchLegacyProject}
         />
         <NavBar match={match} />
